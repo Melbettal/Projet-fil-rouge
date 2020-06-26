@@ -52,4 +52,24 @@ body header nav ul li a:hover {
     text-align: center;
   }
 }
-/*# sourceMappingURL=Header.css.map */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+body .space {
+  height: 80px;
+}
+
+body h2 {
+  text-align: center;
+}
+
+body .table {
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=Gestion_event.css.map */
