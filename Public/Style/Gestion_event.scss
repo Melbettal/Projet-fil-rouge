@@ -10,13 +10,46 @@ body{
     .space{
         height:80px;
     }
+    .Image1{
+        width: 400px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
     h2{
         text-align: center;
     }
     .table{
-        width:90%;
+        width:80%;
         margin: auto;
         border: 1px solid black;
+        div{
+            width: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            border-style: none;
+        }
+    }
+    .divAdd{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        .btnAdd{
+            background-color: $blueColor;
+            width: 230px;
+            height: 40px;
+            color:white;
+            margin: auto;
+            border-radius: 8px;
+            border-style: none;
+            padding: 5px;
+            &:hover{
+                cursor: pointer;
+            background-color :rgb(189, 189, 189);
+            color:$blueColor;
+            }   
+        }
     }
 }
 

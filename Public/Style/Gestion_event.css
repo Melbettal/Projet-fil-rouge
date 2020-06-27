@@ -63,13 +63,56 @@ body .space {
   height: 80px;
 }
 
+body .Image1 {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 body h2 {
   text-align: center;
 }
 
 body .table {
-  width: 90%;
+  width: 80%;
   margin: auto;
   border: 1px solid black;
+}
+
+body .table div {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .table button {
+  border-style: none;
+}
+
+body .divAdd {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+body .divAdd .btnAdd {
+  background-color: #038DFE;
+  width: 230px;
+  height: 40px;
+  color: white;
+  margin: auto;
+  border-radius: 8px;
+  border-style: none;
+  padding: 5px;
+}
+
+body .divAdd .btnAdd:hover {
+  cursor: pointer;
+  background-color: #bdbdbd;
+  color: #038DFE;
 }
 /*# sourceMappingURL=Gestion_event.css.map */
