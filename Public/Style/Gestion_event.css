@@ -115,4 +115,8 @@ body .divAdd .btnAdd:hover {
   background-color: #bdbdbd;
   color: #038DFE;
 }
+
+body .retour button {
+  border-style: none;
+}
 /*# sourceMappingURL=Gestion_event.css.map */

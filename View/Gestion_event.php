@@ -11,33 +11,9 @@
     <title> Gestion d'événements </title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light style=background-color:#cacaca" style="padding: 6px 30px;">
-            <img src="../Public/Images/Logo.png" height="50px" width="220px">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" style="color:white;" href="#">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="#Services">Evénemets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: white;" href="#AboutUs">Forum</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="#Contact">Gestion</a>
-                </li>
-              </ul>
-              <li class="nav-item">
-                <a class="nav-link"><button class="btnConnexion"> Se connecter </button></a>
-              </li>
-            </div>
-        </nav>
-    </header>
+    <?php
+      include '../Includes/HeaderClub.php'
+    ?>
     <div class="space"></div>
     <div class="Image1"><img src="../Public/Images/Tab_img.svg" alt="photo" width="400px" height="300px"> </div>
     <h2> Les événements à venir </h2>
@@ -57,11 +33,15 @@
             <th scope="row">2</th>
             <td>Mark</td>
             <td>Otto</td>
-            <td> 
+            <td>
+              <a href="Modif_event">
                 <button><img src="../Public/Images/Modifier.svg" width="30px" height="30px" alt="Modifier"></button> 
+              </a>
             </td>
             <td> 
-              <button><img src="../Public/Images/Cloturer.svg" width="30px" height="30px" alt="Cloturer"></button>
+              <a href="Cloture_event">
+                <button><img src="../Public/Images/Cloturer.svg" width="30px" height="30px" alt="Cloturer"></button>
+              </a>
             </td>
           </tr>
           <tr>
@@ -89,7 +69,9 @@
         </tbody>
       </table>
       <div class="divAdd">
-          <button class="btnAdd"> <img src="../Public/Images/plus.png" alt="add" width="20px" height="20px"> Ajouter événement </button>
+          <a href="Ajout_event">
+            <button class="btnAdd"> <img src="../Public/Images/plus.png" alt="add" width="20px" height="20px"> Ajouter événement </button>
+          </a>
       </div>
       <div class="space"></div>
 </body>

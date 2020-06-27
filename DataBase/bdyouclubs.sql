@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 25 juin 2020 à 00:58
+-- Généré le :  sam. 27 juin 2020 à 23:16
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -35,7 +35,14 @@ CREATE TABLE IF NOT EXISTS `club` (
   `email_club` varchar(255) NOT NULL,
   `mdp_club` varchar(255) NOT NULL,
   PRIMARY KEY (`id_club`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `club`
+--
+
+INSERT INTO `club` (`id_club`, `nom_club`, `email_club`, `mdp_club`) VALUES
+(1, 'Lecture', 'Club-lecture@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 -- --------------------------------------------------------
 
@@ -72,9 +79,15 @@ CREATE TABLE IF NOT EXISTS `membre` (
   `prenom_membre` varchar(255) NOT NULL,
   `email_membre` varchar(255) NOT NULL,
   `mdp_membre` varchar(255) NOT NULL,
-  `admin` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_membre`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `membre`
+--
+
+INSERT INTO `membre` (`id_membre`, `nom_membre`, `prenom_membre`, `email_membre`, `mdp_membre`) VALUES
+(1, 'Saadoune', 'Sanaa', 'Sanaa@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 -- --------------------------------------------------------
 

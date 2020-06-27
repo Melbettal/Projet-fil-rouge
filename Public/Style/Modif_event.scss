@@ -68,7 +68,6 @@ body{
                         color:red;
                     }
                 }
-                
         }
             
     }
@@ -79,6 +78,11 @@ body{
             img{
                 width: 100%;
             }
+        }
+    }
+    .retour{
+        button{
+            border-style: none;
         }
     }
 }

@@ -138,6 +138,10 @@ body .firstPart .pictPart img {
   width: 100%;
 }
 
+body .retour button {
+  border-style: none;
+}
+
 @media only screen and (max-width: 1300px) {
   body .firstPart {
     display: -webkit-box;
