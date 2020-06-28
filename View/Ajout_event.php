@@ -1,3 +1,5 @@
+<?php include '../Model/Insertion.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,33 +14,38 @@
 </head>
 <body>
     <?php
-      include '../Includes/HeaderClub.php'
+      include '../Includes/HeaderClub.php';
     ?>
     <div class="space"></div>
     <h2> Ajouter un événement </h2>
     <div class="space"></div>
+    <?php echo $Success; ?> 
     <div class="firstPart">
         <div class="formPart">
           <form method="post"  enctype="multipart/form-data">
             <div>
                 <label for="nom"> Nom : </label>
                 <input type="text" name="nom" id="nom">
+                <p style="color:red;"> <?php echo $nomERROR; ?> </p>
             </div>
             <div>
                 <label for="date"> Date : </label>
                 <input type="datetime-local" name="date" id="date">
+                <p style="color:red;"> <?php echo $dateERROR; ?></p>
             </div>
             <div>
                 <label for="photo"> Photo : </label>
                 <input type="file" name="photo" id="photo">
+                <p style="color:red;"> <?php echo $photoERROR; ?></p>
             </div>
             <div>
                 <label for="description"> Description : </label>
                 <textarea name="description" id="description"></textarea>
+                <p style="color:red;"> <?php echo $descriptionERROR; ?></p>
             </div>
             <div>
                 <button type="submit" name="Ajouter"> Ajouter </button> 
-            </div>
+            </div> 
           </form>
         </div>
         <div class="pictPart">
