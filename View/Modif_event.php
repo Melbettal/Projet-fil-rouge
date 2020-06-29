@@ -1,3 +1,8 @@
+<?php 
+    include '../Model/Affichage.php';
+    include '../Model/Modification.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,33 +17,40 @@
 </head>
 <body>
     <?php
-      include '../Includes/HeaderClub.php'
+      include '../Includes/HeaderClub.php';
     ?>
     <div class="space"></div>
-    <h2> Modifier l'événement "___________" </h2>
+    <h2> Modifier l'événement "<?php echo $row->nom_event ?>" </h2>
+    <?php echo $Success; ?> 
     <div class="space"></div>
     <div class="firstPart">
         <div class="formPart">
-            <div>
-                <label for="nom"> Nom : </label>
-                <input type="text" name="nom" id="nom">
-            </div>
-            <div>
-                <label for="date"> Date : </label>
-                <input type="datetime-local" name="date" id="date">
-            </div>
-            <div>
-                <label for="photo"> Photo : </label>
-                <input type="file" name="photo" id="photo">
-            </div>
-            <div>
-                <label for="description"> Description : </label>
-                <textarea name="description" id="description"></textarea>
-            </div>
-            <div class="buttons">
-                <button id="btnModifier" name="btnModifier"> Modifier </button>
-                <button id="btnSupprimer" name="btnSupprimer"> Supprimer </button> 
-            </div>
+            <form method="post"  enctype="multipart/form-data">
+                <div>
+                    <label for="nom"> Nom : </label>
+                    <input type="text" name="nom" id="nom" value="<?php echo $row->nom_event ?>">
+                    <p style="color:red;"> <?php echo $nomERROR; ?> </p>
+                </div>
+                <div>
+                    <label for="date"> Date : </label>
+                    <input type="datetime-local" name="date" id="date" value="<?php echo $row->date_event ?>">
+                    <p style="color:red;"> <?php echo $dateERROR; ?></p>
+                </div>
+                <div>
+                    <label for="photo"> Photo : </label>
+                    <input type="file" name="photo" id="photo" value="<?php echo $row->photo_event ?>">
+                    <p style="color:red;"> <?php echo $photoERROR; ?></p>
+                </div>
+                <div>
+                    <label for="description"> Description : </label>
+                    <textarea name="description" id="description"><?php echo $row->description_event ?></textarea>
+                    <p style="color:red;"> <?php echo $descriptionERROR; ?></p>
+                </div>
+                <div class="buttons">
+                    <button tybe="submit" name="Modifier" id="btnModifier" > Modifier </button>
+                    <button tybe="submit" name="Supprimer" id="btnSupprimer" > Supprimer </button> 
+                </div>
+            </form>
         </div>
         <div class="space"></div>
         <div class="pictPart">
@@ -47,7 +59,7 @@
     </div>
     <div class="space"></div>
     <div class="retour">
-        <a href="Gestion_event">
+        <a href="Gestion_event.php">
             <button><img src="../Public/Images/retour.svg" alt="retour" width="40px" height="40px"></button>
         </a>
     </div>

@@ -1,16 +1,10 @@
 <?php 
 include '../Model/DataBase.php';
+include '../Includes/functions.php';
 
     $id_event    = $nom = $photo = $description = $date  = $nomERROR = $dateERROR = $photoERROR  = $descriptionERROR = "";
     $isSuccess  = $status =  true;
     $Success ="";
-
-    function checkInput($data){
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;   
-    }
 
     session_start();
     if( $_SESSION["club"] == null){
@@ -21,7 +15,7 @@ include '../Model/DataBase.php';
           $date  = checkInput($_POST['date']);
           $photo = checkInput($_FILES['photo']['name']);
           $description = checkInput($_POST['description']);
-          $target = "../Includes/Images/". $_SESSION['id_club']."/".basename($photo);
+          $target = "../Public/Images_event/". $_SESSION['id_club']."/".basename($photo);
           $imageExtension  = pathinfo($target,PATHINFO_EXTENSION);
           if(empty($nom)){
            $nomERROR = "Ce champ ne peut pas être vide";

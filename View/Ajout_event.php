@@ -18,8 +18,8 @@
     ?>
     <div class="space"></div>
     <h2> Ajouter un événement </h2>
-    <div class="space"></div>
     <?php echo $Success; ?> 
+    <div class="space"></div>
     <div class="firstPart">
         <div class="formPart">
           <form method="post"  enctype="multipart/form-data">
@@ -54,7 +54,7 @@
     </div>
     <div class="space"></div>
     <div class="retour">
-        <a href="Gestion_event">
+        <a href="Gestion_event.php">
             <button><img src="../Public/Images/retour.svg" alt="retour" width="40px" height="40px"></button>
         </a>
     </div>

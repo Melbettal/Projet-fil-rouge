@@ -49,7 +49,7 @@
     </div>
     <div class="space"></div>
     <div class="retour">
-        <a href="Gestion_event">
+        <a href="Gestion_event.php">
             <button><img src="../Public/Images/retour.svg" alt="retour" width="40px" height="40px"></button>
         </a>
     </div>

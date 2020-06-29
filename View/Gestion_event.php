@@ -1,3 +1,6 @@
+<?php 
+  include '../Model/Affichage.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +15,7 @@
 </head>
 <body>
     <?php
-      include '../Includes/HeaderClub.php'
+      include '../Includes/HeaderClub.php';
     ?>
     <div class="space"></div>
     <div class="Image1"><img src="../Public/Images/Tab_img.svg" alt="photo" width="400px" height="300px"> </div>
@@ -22,51 +25,35 @@
         <thead>
           <tr>
             <th scope="col">Id</th>
+            <th scope="col">Photo</th>
             <th scope="col">Nom</th>
             <th scope="col">Date</th>
             <th scope="col"  width="50px">Modifier</th>
             <th scope="col"  width="50px">Clôturer</th>
           </tr>
         </thead>
+        <?php
+            foreach ($rows as $row) {
+        ?>        
         <tbody>
           <tr>
-            <th scope="row">2</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>
-              <a href="Modif_event">
+            <th style="vertical-align: middle;"scope="row"> <?php echo $row->id_event ?> </th>
+            <td style="vertical-align: middle;"><img height="100px" width="100px" src='../Public/Images_event/<?php echo $_SESSION['id_club'] ?>/<?php echo $row->photo_event ?>' alt="photo_event"></td>
+            <td style="vertical-align: middle;"><?php echo $row->nom_event ?></td>
+            <td style="vertical-align: middle;"><?php echo $row->date_event ?></td>
+            <td style="vertical-align: middle;">
+              <a href="Modif_event.php?do=modif&id_event=<?php echo $row->id_event ?>">
                 <button><img src="../Public/Images/Modifier.svg" width="30px" height="30px" alt="Modifier"></button> 
               </a>
             </td>
-            <td> 
-              <a href="Cloture_event">
+            <td style="vertical-align: middle;"> 
+              <a href="Cloture_event?do=cloture&id_event=<?php echo $row->id_event ?>">
                 <button><img src="../Public/Images/Cloturer.svg" width="30px" height="30px" alt="Cloturer"></button>
               </a>
             </td>
           </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td> 
-                <button><img src="../Public/Images/Modifier.svg" width="30px" height="30px" alt="Modifier"></button> 
-            </td>
-            <td> 
-              <button><img src="../Public/Images/Cloturer.svg" width="30px" height="30px" alt="Cloturer"></button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td> 
-                <button><img src="../Public/Images/Modifier.svg" width="30px" height="30px" alt="Modifier"></button> 
-            </td>
-            <td> 
-              <button><img src="../Public/Images/Cloturer.svg" width="30px" height="30px" alt="Cloturer"></button>
-            </td>
-          </tr>
         </tbody>
+        <?php } ?>
       </table>
       <div class="divAdd">
           <a href="Ajout_event">
