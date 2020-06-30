@@ -55,4 +55,3 @@ include '../Includes/functions.php';
       }
 }
 
-?>

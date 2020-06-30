@@ -10,7 +10,11 @@
 
     if( $_SESSION["club"] == null){
         header("Location:../View/LoginTest.php");
-    }else{
+    }else if($do != 'modif')
+    {
+        header("Location:../View/LoginTest.php");
+    }
+    else{
         $stmt = $db->prepare("SELECT DATE_FORMAT(date_event, '%Y-%m-%dT%H:%i:%s') as date_event, nom_event, photo_event,description_event FROM evenement WHERE id_event = ? LIMIT 1");
         $stmt->execute(array($id_event));
         $row = $stmt->fetch();
@@ -81,4 +85,3 @@
              header('refresh:2;url=../View/Gestion_event.php');
         
     }
-?>
