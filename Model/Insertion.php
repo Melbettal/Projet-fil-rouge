@@ -15,8 +15,11 @@ include '../Includes/functions.php';
           $date  = checkInput($_POST['date']);
           $photo = checkInput($_FILES['photo']['name']);
           $description = checkInput($_POST['description']);
-          $target = "../Public/Images_event/". $_SESSION['id_club']."/".basename($photo);
+          $photorandom = rand(0,1000000);
+
+          $target = "../Public/Images_event/". $_SESSION['id_club']."/".$photorandom.basename($photo);
           $imageExtension  = pathinfo($target,PATHINFO_EXTENSION);
+          
           if(empty($nom)){
            $nomERROR = "Ce champ ne peut pas être vide";
            $isSuccess = false;
@@ -47,7 +50,7 @@ include '../Includes/functions.php';
             $status = false;
             move_uploaded_file($_FILES['photo']['tmp_name'],$target);  
             $stmt = $db->prepare("INSERT INTO evenement ( nom_event, date_event, photo_event, description_event, id_club) VALUES (?, ?, ?, ?, ?)");
-            $stmt->execute(array($nom, $date, $photo,$description,$_SESSION['id_club'] ));
+            $stmt->execute(array($nom, $date, $photorandom.$photo,$description,$_SESSION['id_club'] ));
 
             $Success ="<br> <br> <div class='alert alert-success' role='alert'> Evénement bien ajouté ! </div>" .
              header('refresh:2;url=../View/Gestion_event.php');
