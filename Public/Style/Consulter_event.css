@@ -225,109 +225,37 @@ body .Part_event h2 {
   text-align: center;
 }
 
-body .Part_event .tri {
-  width: 86%;
+body .Part_event .infosEvent {
+  width: 80%;
   margin: auto;
-}
-
-body .Part_event .tri .triAll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 420px;
-  float: right;
 }
 
-body .Part_event .tri .triAll .btnSearch {
-  border-style: none;
-  background-color: white;
-}
-
-body .Part_event .tri .triAll select {
-  font-size: 18px;
-  width: 180px;
-  text-align: center;
-}
-
-body .Part_event .evenements {
-  width: 90%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body .Part_event .evenements .evenement {
-  height: 400px;
-  width: 380px;
-  margin: auto;
-  border: 1px solid black;
-  margin-bottom: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 5px;
-  -webkit-box-shadow: 2px 3px 5px rgba(136, 139, 139, 0.884);
-          box-shadow: 2px 3px 5px rgba(136, 139, 139, 0.884);
-  border-color: white;
-}
-
-body .Part_event .evenements .evenement .photoEvent {
-  height: 65%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body .Part_event .evenements .evenement .infosEvent {
-  background-color: #FCFCFC;
-  height: 35%;
-  padding: 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body .Part_event .evenements .evenement .infosEvent p {
-  height: 28px;
-  overflow: hidden;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-body .Part_event .evenements .evenement .infosEvent h5 {
+body .Part_event .infosEvent span {
   color: red;
+}
+
+body .Part_event .infosEvent .leftPart {
+  width: 400px;
+}
+
+body .Part_event .infosEvent .rightPart {
+  width: 600px;
+}
+
+body .Part_event .infosEvent .rightPart h5 {
   text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
 }
 
-body .Part_event .evenements .evenement .infosEvent button {
-  float: right;
-  width: 150px;
-  height: 40px;
-  background-color: #038DFE;
-  color: white;
-  border-radius: 10px;
-  border-style: none;
-  font-size: 20px;
-}
-
-body .Part_event .evenements .evenement .infosEvent button:hover {
-  cursor: pointer;
-  background-color: #bdbdbd;
-  color: #038DFE;
+body .Part_event .infosEvent .rightPart p {
+  background-color: #fafafa;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -355,4 +283,4 @@ body .Part_event .evenements .evenement .infosEvent button:hover {
     margin-top: 60px;
   }
 }
-/*# sourceMappingURL=Evenements.css.map */
+/*# sourceMappingURL=Consulter_event.css.map */
