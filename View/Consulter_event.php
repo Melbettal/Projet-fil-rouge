@@ -71,6 +71,8 @@
         </div>
     </section>
     <div class="space"></div>
-    
+    <?php
+      include '../Includes/Footer.php';
+    ?>
 </body>
 </html>

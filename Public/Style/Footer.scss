@@ -1,0 +1,27 @@
+
+.footer1{
+    padding: 6px;
+    text-align: center;
+    background: black;
+    line-height: 25px;
+    color: #fff;
+    font-family: 'Gilroy';
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 0px;
+  }
+  
+  .footer1 span{  
+  background-image: url('../Images/bluePic.png');
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: fire 2s linear infinite;
+  animation: fire 2s linear infinite;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+  @keyframes fire{
+    0%{background-position: 0% -50%;}
+    0%{background-position: 100% -50%;}
+  }
