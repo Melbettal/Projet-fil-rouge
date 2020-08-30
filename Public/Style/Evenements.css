@@ -185,7 +185,7 @@ body .Description_page .container {
 
 body .Description_page .neon {
   color: #FB4264;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 90px;
   text-shadow: 0 0 3vw #F40A35;
 }
@@ -394,6 +394,16 @@ body .Part_event .evenements .evenement .infosEvent button:hover {
     width: 90%;
     margin: auto;
     margin-top: 60px;
+  }
+  .Part_event .tri {
+    width: 86%;
+    margin: auto;
+  }
+  .Part_event .tri .triAll {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=Evenements.css.map */

@@ -78,7 +78,7 @@ body{
         
         .neon {
             color: #FB4264;
-            font-size: 60px;
+            font-size: 50px;
             line-height: 90px;
             text-shadow: 0 0 3vw #F40A35;
         }
@@ -238,5 +238,13 @@ body{
             margin-top: 60px;
         }
     }
-
+    .Part_event{
+        .tri{
+            width: 86%;
+            margin: auto;
+            .triAll{
+                flex-direction: column;
+            }
+        }
+    }
 }
