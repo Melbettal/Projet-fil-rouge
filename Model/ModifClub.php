@@ -7,7 +7,7 @@ include '../Includes/functions.php';
     if( $_SESSION["admin"] == null){
        header("Location:../View/LoginTest.php");
     }else{
-        $nom = $email = $mdp = $id_club=  $nomERROR =  $emailERROR =  $mdpERROR ="";
+        $nom = $email = $mdp = $Cmdp = $id_club=  $nomERROR =  $emailERROR =  $mdpERROR = $CmdpERROR="";
         $Success ="";
         $isSuccess  =  true;
 
@@ -21,22 +21,59 @@ include '../Includes/functions.php';
         if(isset($_POST['Modifier'])){
           $nom = checkInput($_POST['nom']);
           $email  = checkInput($_POST['email']);
-          $mdp = checkInput($_POST['mdp']);
+          $hashedMdp = checkInput($_POST['mdp']);
           $hashedMdp = sha1($mdp);
+          $Cmdp = checkInput($_POST['Cmdp']);
+          $ChashedMdp = sha1($Cmdp);
 
           
           if(empty($nom)){
-           $nomERROR = "Ce champ ne peut pas être vide";
-           $isSuccess = false;
-          }
-          if(empty($email)){
-           $emailERROR = "Ce champ ne peut pas être vide";
-           $isSuccess = false;
-          }
-          if(empty($hashedMdp)){
-           $mdpERROR = "Ce champ ne peut pas être vide";
-           $isSuccess = false;
-          }
+            $nomERROR = "Ce champ ne peut pas être vide";
+            $isSuccess = false;
+           }
+           else{
+             $stmt = $db->prepare("SELECT nom_club FROM club WHERE nom_club = ? AND id_club != ?");
+             $stmt->execute(array($nom, $id_club));
+             $row = $stmt->fetchAll();
+             if($row != null)
+             {
+               $nomERROR = "Le nom existe déjà";
+               $isSuccess = false;
+             }
+           }
+ 
+           if(empty($email)){
+            $emailERROR = "Ce champ ne peut pas être vide";
+            $isSuccess = false;
+           }
+           else{
+             $stmt2 = $db->prepare("SELECT email_club FROM club WHERE email_club = ? AND id_club != ? ");
+             $stmt2->execute(array($email,$id_club));
+             $row2 = $stmt2->fetchAll();
+             if($row2 != null)
+             {
+               $emailERROR = "L'email existe déjà";
+               $isSuccess = false;
+             }
+           }
+ 
+           if(empty($hashedMdp)){
+             $mdpERROR = "Ce champ ne peut pas être vide";
+             $isSuccess = false;
+            }
+ 
+            if(empty($ChashedMdp)){
+             $mdpERROR = "Ce champ ne peut pas être vide";
+             $isSuccess = false;
+            }
+            else
+            {
+              if($hashedMdp != $ChashedMdp)
+              {
+               $CmdpERROR = "Les mots de passe ne sont pas identiques !";
+               $isSuccess = false;
+              }
+            }
          
         if($isSuccess){
             $status = false; 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model Expanded="Yes" ID="{3B1EEDF6-90A3-4419-9980-BB28D8D20994}" Name="DiagrammeUseCase" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="DiagrammeUseCase.moo"/>
+		<Model Expanded="Yes" ID="{FA3E73C9-F304-4B18-9C81-D80D3E983108}" Name="Diagramme de classe" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme_de_classe.moo"/>
+		<Model Expanded="Yes" ID="{DE2219E2-3ED1-41A9-A1A7-85E7EE5B981A}" Name="Diagramme de séquence UML_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme_de_séquence.moo"/>
+		<Model Expanded="Yes" ID="{9D394A63-7FAA-49A7-A015-B279C9EC3BFC}" Name="Diagramme de classe" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Modele_physique.mpd"/>
+		<Model Expanded="Yes" ID="{DAA6115B-9BA2-464C-9AE4-F401815B711C}" Name="Diagramme de séquence UML_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de séquence UML_1.moo"/>
+		<Model Expanded="Yes" ID="{DD1ACD54-2F3C-4213-BFBF-3DEE23962474}" Name="Diagramme de séquence UML_2" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de séquence UML_2.moo"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>

@@ -30,13 +30,18 @@
             </div>
             <div>
                 <label for="email"> Email : </label>
-                <input type="text" name="email" id="email">
+                <input type="email" name="email" id="email">
                 <p style="color:red;"> <?php echo $emailERROR; ?></p>
             </div>
             <div>
                 <label for="mdp"> Mot de passe : </label>
-                <input type="text" name="mdp" id="mdp">
+                <input type="password" name="mdp" id="mdp">
                 <p style="color:red;"> <?php echo $mdpERROR; ?></p>
+            </div>
+            <div>
+                <label for="Cmdp"> Confirmation mot de passe : </label>
+                <input type="password" name="Cmdp" id="Cmdp">
+                <p style="color:red;"> <?php echo $CmdpERROR; ?></p>
             </div>
             <div>
                 <button type="submit" name="Ajouter"> Ajouter </button> 
