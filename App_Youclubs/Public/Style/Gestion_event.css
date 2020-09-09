@@ -1,0 +1,157 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body header nav {
+  background-color: black;
+  font-family: "Montserrat";
+}
+
+body header nav .navbar-toggler {
+  color: white;
+  background-color: white;
+}
+
+body header nav .btnConnexion {
+  margin-top: -130px;
+  width: 200px;
+  height: 50px;
+  background-color: #038DFE;
+  color: white;
+  border-radius: 40px;
+  border-style: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+body header nav .btnConnexion:hover {
+  cursor: pointer;
+  background-color: #bdbdbd;
+  color: #038DFE;
+}
+
+body header nav ul li a {
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+body header nav ul li a:hover {
+  background-color: #2c2c2c;
+}
+
+@media only screen and (max-width: 1300px) {
+  header nav .nav-link {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  header nav li a {
+    text-align: center;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+body .space {
+  height: 80px;
+}
+
+body .Image1 {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+body h2 {
+  text-align: center;
+}
+
+body .table {
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+body .table td {
+  text-align: center;
+}
+
+body .table div {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .table button {
+  border-style: none;
+}
+
+body .divAdd {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+body .divAdd .btnAdd {
+  background-color: #038DFE;
+  width: 230px;
+  height: 40px;
+  color: white;
+  margin: auto;
+  border-radius: 8px;
+  border-style: none;
+  padding: 5px;
+}
+
+body .divAdd .btnAdd:hover {
+  cursor: pointer;
+  background-color: #bdbdbd;
+  color: #038DFE;
+}
+
+body .retour button {
+  border-style: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  body h2 {
+    font-size: 3vw;
+  }
+  body .searchDiv .triAll {
+    width: 190px;
+  }
+  body .searchDiv .triAll input {
+    width: 150px;
+    font-size: 1.5vw;
+  }
+  body table {
+    font-size: 1.5vw;
+  }
+  body button img {
+    width: 18px;
+    height: 18px;
+  }
+  body .divAdd .btnAdd {
+    width: 140px;
+    font-size: 1.5vh;
+  }
+  body .divAdd .btnAdd img {
+    width: 13px;
+    height: 13px;
+  }
+  body .divAdd .pagination {
+    font-size: 1.5vw;
+  }
+}
+/*# sourceMappingURL=Gestion_event.css.map */

@@ -1,0 +1,112 @@
+@import "./HeaderClub";
+@import "./Footer";
+
+$inputColor : #E8EFF6;
+$font: "Montserrat";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+body {
+    .one {
+        margin-top: 80px;
+    }
+
+    .adj {
+        padding: 3%;
+    }
+
+    .pic1 {
+        width: 130%;
+    }
+
+    .pic2 {
+        width: 150%;
+    }
+
+    .pic3 {
+        width: 150%;
+    }
+
+    .pic4 {
+        width: 150%;
+    }
+
+    p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .two {
+        width: 100%;
+        padding: 10%;
+    }
+
+    svg {
+        margin-top: 66px;
+        margin-left: 75px;
+    }
+}
+
+#footer-wrapper {
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.SocialIcons {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.SocialIcons ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+#social {
+    width: fit-content;
+    /* float: left; */
+    margin: 0 auto;
+    color: #FFF;
+}
+
+.faCont {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    margin: 8px;
+    margin-bottom: 7px;
+}
+
+.Paiment {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 6px;
+
+}
+
+.Condition {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    svg {
+        visibility: hidden;
+    }
+}
