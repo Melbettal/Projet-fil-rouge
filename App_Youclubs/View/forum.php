@@ -1,5 +1,7 @@
 <?php 
   include '../Model/AffichageEvents.php';
+  include '../Includes/manage_forum.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +29,7 @@
 <?php 
         include '../Includes/HeaderClub.php';
     ?>
+
 
     <div class="first">
         <h2 class="h">FORUM</h2>
@@ -63,19 +66,25 @@
         <!-- <a class="nav-link" href="../Model/Logout.php"><button class="btnConnexion"> Ajouter une suggestion</button></a> -->
         </section>                
     </div>
-                    <div class="row">
-<div class="for">
-        <div class="card">
-            <div class="card-header">
-                Quote
-            </div>
-            <div class="card-body">
-                <blockquote class="blockquote mb-0">
+        <div class="row">
+            <div class="for">
+                <div class="card">
+                    <div class="card-header">
+                    Quote
+                    </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                 </blockquote>
             </div>
         </div>
+        </div>
+        </div>
+                    <div class="row">
+                    <a class="nav-link" href="./messuggestions.php"><button class="btnConnexion" >
+                                Mes suggestions
+                            </button>
                     </div>
                     </div>
 
@@ -86,13 +95,13 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Ajouter un produit</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Ajouter une suggestion</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="../Includes/manage_forum.php" method="POST">
                         <div class="form-group d-flex flex-column">
                             <label for="addCategorie" class="col-form-label">Club concerné:</label>
                                 <select  name="select2" id="tri_club">
@@ -104,13 +113,19 @@
                         </div>  
                         <div class="form-group">
                             <label for="message-text" class="col-form-label">Suggestion :</label>
-                            <textarea class="form-control" id="suggestion"></textarea>
+                            <textarea class="form-control" name="suggestion" id="suggestion"></textarea>
                         </div>
-                    </form>
-                </div>
+                        <div class="form-group">
+                            <label for="start">Date:</label>
+                                <input type="date" id="start" name="datte"
+                                 min="2020-01-01" max="2030-12-31">
+                        </div>
+                    
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn btn-primary" id="btnAddProductExecute">Ajouter</button>
+                    <button type="button" name="ajouter" class="btn btn-primary" id="btnAddProductExecute">Ajouter</button>
+                </div>
+                </form>
                 </div>
             </div>
         </div>
