@@ -20,3 +20,5 @@
              header('refresh:2;url=../View/Gestion_suggest.php');
         
     }
+
+   

@@ -1,0 +1,96 @@
+@import "./HeaderClub";
+@import "./Footer";
+
+$inputColor : #E8EFF6;
+$font: "Montserrat";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+body {
+    
+    h2{
+        text-align: center;
+    }
+    .Image1{
+        width: 400px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .table{
+        width:80%;
+        margin: auto;
+        border: 1px solid black;
+        td{
+            text-align: center;
+        }
+        div{
+            width: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            border-style: none;
+        }
+    }
+    
+    .space{
+        height: 80px;
+    }
+    .h {
+        text-align: center;
+        padding: 1em;
+        font-weight: 3em;
+    }
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .Part_event{
+        width: 100%;
+        padding: 5px;
+        h2{
+            text-align: center;
+        }
+        .tri{
+            width: 86%;
+            margin: auto;
+            .triAll{
+                display: flex;
+                justify-content: space-between;
+                width: 420px;
+                float: left;
+                .btnSearch{
+                    border-style: none;
+                    background-color: white;
+                }
+                select{
+                    font-size: 18px;
+                    width: 180px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    section{
+    .btnSuggestion {
+            // width: 110%;
+            height: 41px;
+            background-color: #038DFE;
+            color: white;
+            border-radius: 40px;
+            border-style: none;
+            font-size: 16px;
+            padding: 8px;
+            float: right;
+    }}
+    .row {
+        padding: 13px;
+    }
+    .card {
+        width: 1097px;
+    }
+}

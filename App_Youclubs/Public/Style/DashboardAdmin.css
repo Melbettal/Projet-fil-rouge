@@ -179,6 +179,37 @@ body .retour button {
   border-style: none;
 }
 
+@media only screen and (max-width: 1300px) {
+  body h2 {
+    font-size: 3vw;
+  }
+  body .searchDiv .triAll {
+    width: 190px;
+  }
+  body .searchDiv .triAll input {
+    width: 150px;
+    font-size: 1.5vw;
+  }
+  body table {
+    font-size: 1.5vw;
+  }
+  body button img {
+    width: 18px;
+    height: 18px;
+  }
+  body .divAdd .btnAdd {
+    width: 140px;
+    font-size: 1.5vh;
+  }
+  body .divAdd .btnAdd img {
+    width: 13px;
+    height: 13px;
+  }
+  body .divAdd .pagination {
+    font-size: 1.5vw;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

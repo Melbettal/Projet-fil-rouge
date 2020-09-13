@@ -177,11 +177,11 @@ body{
                 }
                 .infosEvent{
                     background-color: #FCFCFC;
-                    height: 35%;
+                    height: 37%;
                     padding: 8px;
                     box-sizing: border-box;
                     p{
-                        height: 28px;
+                        height: 48px;
                         overflow: hidden;
                         text-align: center;
                         font-weight: bold;
@@ -200,6 +200,7 @@ body{
                         border-radius: 10px;
                         border-style: none;
                         font-size: 20px;
+                        margin-bottom: 10px;
                         &:hover{
                         cursor: pointer;
                             background-color :rgb(189, 189, 189);

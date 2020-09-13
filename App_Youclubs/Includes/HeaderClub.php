@@ -5,18 +5,12 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                  <a class="nav-link" style="color: white;" href="Gestion_event.php">Gestion des événements </a>
+                </li>
                 <li class="nav-item active">
-                  <a class="nav-link" style="color:white;" href="#">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="Evenements.php">Evénemets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: white;" href="#">Forum</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="Gestion_event.php">Gestion</a>
+                  <a class="nav-link" style="color: white;" href="Suggest_club.php">Suggestions des événements </a>
                 </li>
               </ul>
               <li class="nav-item">

@@ -7,14 +7,17 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" style="color:white;" href="#">Accueil <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" style="color:white;" href="Home.php">Accueil </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="Evenements.php">Evénemets</a>
+                  <a class="nav-link" style="color: white;" href="Evenements.php">Evénements</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: white;" href="#">Forum</a>
-                  </li>
+                    <a class="nav-link" style="color: white;" href="Forum.php">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="Profil.php">Profil</a>
+                </li>
               </ul>
               <li class="nav-item">
                 <a class="nav-link" href="../Model/Logout.php"><button class="btnConnexion"> Se déconnecter </button></a>

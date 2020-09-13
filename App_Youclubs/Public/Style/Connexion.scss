@@ -1,0 +1,64 @@
+@import "./HeaderClub";
+@import "./Footer";
+
+$inputColor : #E8EFF6;
+$font: "Montserrat";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+body {
+    .space{
+        height: 80px;
+    }
+    .one {
+        margin-top: 80px;
+    }
+
+    // .adj {
+    //     padding: 3%;
+    // }
+
+    .pic5 {
+        width: 100%;
+    }
+
+    p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .two {
+        width: 100%;
+        padding: 10%;
+    }
+
+    svg {
+        margin-top: 66px;
+        margin-left: 75px;
+    }
+    .form-control {
+        background-color: #E8EFF6;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    svg {
+        visibility: hidden;
+    }
+    .pic5 {
+        width: 100%;
+    }
+    .border {
+        padding: 12%;
+    }
+}
+@media screen and (min-width: 480px) {
+    .pic5 {
+        width: 100%;
+    }
+} 

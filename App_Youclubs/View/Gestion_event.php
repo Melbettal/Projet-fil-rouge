@@ -24,12 +24,12 @@
     <table class="table table-hover">
         <thead>
           <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Photo</th>
-            <th scope="col">Nom</th>
-            <th scope="col">Date</th>
-            <th scope="col"  width="50px">Modifier</th>
-            <th scope="col"  width="50px">Clôturer</th>
+            <th scope="col" style="text-align:center;">Id</th>
+            <th scope="col" style="text-align:center;">Photo</th>
+            <th scope="col" style="text-align:center;">Nom</th>
+            <th scope="col" style="text-align:center;">Date</th>
+            <th scope="col"  style="text-align:center;" width="50px">Modifier</th>
+            <th scope="col" style="text-align:center;"  width="50px">Clôturer</th>
           </tr>
         </thead>
         <?php
@@ -37,16 +37,16 @@
         ?>        
         <tbody>
           <tr>
-            <th style="vertical-align: middle;"scope="row"> <?php echo $row->id_event ?> </th>
-            <td style="vertical-align: middle;"><img height="100px" width="100px" src='../Public/Images_event/<?php echo $row->photo_event ?>' alt="photo_event"></td>
-            <td style="vertical-align: middle;"><?php echo $row->nom_event ?></td>
-            <td style="vertical-align: middle;"><?php echo $row->date_event ?></td>
-            <td style="vertical-align: middle;">
+            <th style="text-align:center;"scope="row"> <?php echo $row->id_event ?> </th>
+            <td style="text-align:center;"><img height="100px" width="100px" src='../Public/Images_event/<?php echo $row->photo_event ?>' alt="photo_event"></td>
+            <td style="text-align:center;"><?php echo $row->nom_event ?></td>
+            <td style="text-align:center;"><?php echo $row->date_event ?></td>
+            <td style="text-align:center;">
               <a href="Modif_event.php?do=modif&id_event=<?php echo $row->id_event ?>">
                 <button><img src="../Public/Images/Modifier.svg" width="30px" height="30px" alt="Modifier"></button> 
               </a>
             </td>
-            <td style="vertical-align: middle;"> 
+            <td style="text-align:center;"> 
               <a href="Cloture_event?do=cloture&id_event=<?php echo $row->id_event ?>">
                 <button><img src="../Public/Images/Cloturer.svg" width="30px" height="30px" alt="Cloturer"></button>
               </a>

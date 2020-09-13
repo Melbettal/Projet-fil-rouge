@@ -335,14 +335,14 @@ body .Part_event .evenements .evenement .photoEvent {
 
 body .Part_event .evenements .evenement .infosEvent {
   background-color: #FCFCFC;
-  height: 35%;
+  height: 37%;
   padding: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body .Part_event .evenements .evenement .infosEvent p {
-  height: 28px;
+  height: 48px;
   overflow: hidden;
   text-align: center;
   font-weight: bold;
@@ -363,6 +363,7 @@ body .Part_event .evenements .evenement .infosEvent button {
   border-radius: 10px;
   border-style: none;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 body .Part_event .evenements .evenement .infosEvent button:hover {

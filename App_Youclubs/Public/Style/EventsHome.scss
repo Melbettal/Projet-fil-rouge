@@ -1,0 +1,245 @@
+@import "./HeaderClub";
+@import "./Footer";
+
+*{
+    font-family: $font;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin : 0;
+    padding: 0;
+    .space{
+        height: 80px;
+    }
+    header{
+        nav{
+            background-color: black;
+            
+            .navbar-toggler{
+                color: white;
+                background-color: white;
+            }
+            .btnConnexion{
+                margin-top: -130px;
+                width: 200px;
+                height: 50px;
+                background-color: #038DFE;
+                color:white;
+                border-radius: 40px;
+                border-style: none;
+                font-size: 20px;
+                padding:5px ;
+                &:hover{
+                    cursor: pointer;
+                    background-color :rgb(189, 189, 189);
+                    color:$blueColor;
+                }  
+            }
+            ul li a {
+                font-size:20px;
+                margin-left: 100px;
+                &:hover{
+                    background-color: rgb(44, 44, 44);
+                }
+            }
+        }
+    }
+    hr{
+        border-top: 0.4px solid white;
+        padding: 0;
+        margin: 0;
+        }
+    .Description_page{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        .image1{
+            float: left;
+            margin-left: 30px;
+        }
+        .image2{
+            float: right;
+        }
+        h2{
+            padding: 50px;
+            margin-top: 200px;
+            width: 40%;
+            text-align: center;
+            color:white;
+        }
+        .container {
+            margin-top:100px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .neon {
+            color: #FB4264;
+            font-size: 50px;
+            line-height: 90px;
+            text-shadow: 0 0 3vw #F40A35;
+        }
+        
+        .flux {
+            color: #426DFB;
+            font-size: 60px;
+            line-height: 9vw;
+            text-shadow: 0 0 3vw #2356FF;
+        }
+        
+        .neon {
+            animation: neon 1s ease infinite;
+            -moz-animation: neon 1s ease infinite;
+            -webkit-animation: neon 1s ease infinite;
+        }
+        
+        @keyframes neon {
+            0%,
+            100% {
+            text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+            color: #FED128;
+            }
+            50% {
+            text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+            color: #806914;
+            }
+        }
+        
+        .flux {
+            animation: flux 2s linear infinite;
+            -moz-animation: flux 2s linear infinite;
+            -webkit-animation: flux 2s linear infinite;
+            -o-animation: flux 2s linear infinite;
+        }
+        
+        @keyframes flux {
+            0%,
+            100% {
+            text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+            color: #038DFE;
+            }
+            50% {
+            text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+            color: white;
+            }
+        }
+    } 
+    .Part_event{
+        width: 100%;
+        h2{
+            text-align: center;
+        }
+        .tri{
+            width: 86%;
+            margin: auto;
+            .triAll{
+                display: flex;
+                justify-content: space-between;
+                width: 420px;
+                float: right;
+                .btnSearch{
+                    border-style: none;
+                    background-color: white;
+                }
+                select{
+                    font-size: 18px;
+                    width: 180px;
+                    text-align: center;
+                }
+            }
+        }
+        .evenements{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .evenement{
+                height: 400px;
+                width:380px;
+                margin: auto;
+                border : 1px solid black;
+                margin-bottom: 80px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5px;
+                box-shadow: 2px 3px 5px rgba(136, 139, 139, 0.884);
+                border-color: white;
+                .photoEvent{
+                    height: 65%;
+                    width: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .infosEvent{
+                    background-color: #FCFCFC;
+                    height: 35%;
+                    padding: 8px;
+                    box-sizing: border-box;
+                    p{
+                        height: 100%;
+                        overflow-y: auto;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 20px;
+                        span{
+                            font-weight: normal;
+                            font-size: 15px;
+                        }
+                    }
+                    h5{
+                        color:red;
+                        text-align: center;
+                    }
+                   
+                }
+            }
+        }
+        
+
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1300px){
+    body{
+    h2{
+        font-size: 4vw;
+    }
+    .Description_page{
+        flex-direction: column;
+        .image1{
+            display: none;
+        }
+        .image2{
+            height: 300px;
+            width: 200px;
+            float: none;
+            width: 90%;
+            margin: auto;
+            margin-top: 60px;
+        }
+    }
+    .Part_event{
+        .tri{
+            width: 86%;
+            margin: auto;
+            .triAll{
+                flex-direction: column;
+                select{
+                    font-size: 18px;
+                    width: 140px;
+                    margin-left: 30px;
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+}}

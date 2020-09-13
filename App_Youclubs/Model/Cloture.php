@@ -34,13 +34,13 @@
             $photo4 = checkInput($_FILES['photo4']['name']);
 
             $photorandom1 = rand(0,1000000);
-            $target1 = "../Public/Images_event/". $_SESSION['id_club']."/".$photorandom1.basename($photo1);
+            $target1 = "../Public/Images_event/".$photorandom1.basename($photo1);
             $photorandom2 = rand(0,1000000);
-            $target2 = "../Public/Images_event/". $_SESSION['id_club']."/".$photorandom2.basename($photo2);
+            $target2 = "../Public/Images_event/".$photorandom2.basename($photo2);
             $photorandom3 = rand(0,1000000);
-            $target3 = "../Public/Images_event/". $_SESSION['id_club']."/".$photorandom3.basename($photo3);
+            $target3 = "../Public/Images_event/".$photorandom3.basename($photo3);
             $photorandom4 = rand(0,1000000);
-            $target4 = "../Public/Images_event/". $_SESSION['id_club']."/".$photorandom4.basename($photo4);
+            $target4 = "../Public/Images_event/".$photorandom4.basename($photo4);
 
             $imageExtension  = pathinfo($target1,PATHINFO_EXTENSION);
             

@@ -50,18 +50,18 @@ include '../Includes/functions.php';
             }
           }
 
-          if(empty($hashedMdp)){
+          if(empty($mdp)){
             $mdpERROR = "Ce champ ne peut pas être vide";
             $isSuccess = false;
            }
 
-           if(empty($ChashedMdp)){
+           if(empty($Cmdp)){
             $mdpERROR = "Ce champ ne peut pas être vide";
             $isSuccess = false;
            }
            else
            {
-             if($hashedMdp != $ChashedMdp)
+             if($mdp != $Cmdp)
              {
               $CmdpERROR = "Les mots de passe ne sont pas identiques !";
               $isSuccess = false;

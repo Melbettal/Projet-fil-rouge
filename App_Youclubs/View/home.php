@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Public/Style/home.css">
-  <link rel="stylesheet" href="../Public/Style/eventhome.css">
+  <link rel="stylesheet" href="../Public/Style/Home.css">
+  <link rel="stylesheet" href="../Public/Style/Home_events.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -25,16 +25,16 @@
 </head>
 
 <body>
-<?php
-      include '../Includes/HeaderClub.php';
-    ?>  
+    <?php 
+            include '../Includes/HeaderMembre.php';
+    ?> 
 
   <div class="container one">
     <div class="row">
       <div class="col-sm">
-        <h1>Créer votre événement de club, informer vos étudiants pour qu’ils puisssent atteindre. </h1>
+        <h1>Créez votre événement de club, informez les Youcoders pour qu’ils puisssent participer. </h1>
         <div>
-          Saisissez votre email pour recevoir nos actuels évenements
+          Saisissez votre email pour recevoir nos évenements actuels
         </div>
         <div class="btn-toolbar mb-3 adj" role="toolbar" aria-label="Toolbar with button groups">
           <div class="input-group">
@@ -54,12 +54,40 @@
         </img>
       </div>
       
-      <div class="container two" style="background-color: #E8EFF6;">
+    
+      <section class="Part_event">
+        <div class="space"></div>
+        <h2> Liste des événements à venir </h2>
+        
+          <div class="space"></div>
+            <div class="evenements">
+                <?php
+                    foreach ($rows4 as $row) {
+                ?>
+                <div class="evenement">
+                    <div class="photoEvent" style="background-image: url('../Public/Images_event/<?php echo $row->photo_event ?>');">
+                  
+                  </div>
+                     
+                  <p id="desc"> <?php echo $row->description_event ?></p>
+                    <div class="infosEvent"> 
+                        <h5> <?php echo $row->date_event ?> </h5>
+                        <p> <?php echo $row->nom_event ?><br> <span>~Club <?php echo $row->nom_club?></span></p>
+                        <?php $_SESSION['desc']= $row->description_event ?>
+                    </div>
+                    
+                </div>
+                <?php } ?>
+            </div>
+        </section>
+      </div>
+    </div>
+    <div class="container two" style="background-color: #E8EFF6;">
         <div class="row">
           <div class="col-sm">
             <img src="../Public/Images/pic2.png" class="pic1" alt="png">
             </img>
-            <p>Connecter vous autant que le rôle qui vous convient (Apprenants, Staff, Comité de club).</p>
+            <p>Connectez vous selon le rôle qui vous avez (Apprenants, Staff, Comité de club).</p>
           </div>
           <div class="col-sm">
             <svg width="67" height="67" viewBox="0 0 63 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +99,8 @@
           <div class="col-sm">
             <img src="../Public/Images/pic3.png" class="pic1" alt="png">
             </img>
-            <p>Bénéficier des fonctionnalités disponnibles: ajouter un événement, réserver une place, poster des
-              suggestions</p>
+            <p>Bénéficiez des fonctionnalités disponibles: Organiser des activités, Consulter les événements passés , Poster des
+              suggestions ...</p>
           </div>
           <div class="col-sm">
             <svg width="67" height="67" viewBox="0 0 63 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,44 +112,21 @@
           <div class="col-sm">
             <img src="../Public/Images/pic4.png" class="pic1" alt="png">
             </img>
-            <p>Naviger en tout comfort, et amuser vous à votre monde d’apprentissage.</p>
+            <p>Navigez en tout comfort, et amusez vous dans votre monde d’apprentissage.</p>
           </div>
         </div>
       </div>
+      <br><br>
 
-      <section class="Part_event">
-        <div class="space"></div>
-        <h2> Liste des événements passés </h2>
-        
 
-        <div class="space"></div>
-        <div class="evenements">
-            <?php
-                foreach ($rows as $row) {
-            ?>
-            <div class="evenement">
-                <div class="photoEvent" style="background-image: url('../Public/Images_event/<?php echo $row->id_club ?>/<?php echo $row->photo_event ?>');">  </div>
-                <div class="infosEvent"> 
-                    <h5> <?php echo $row->date_event ?> </h5>
-                    <p> <?php echo $row->nom_event ?></p>
-                    <a href="Consulter_event.php?do=consult&id_event=<?php echo $row->id_event ?>">
-                        <button class="btnConsulter" name="Consulter"> Consulter</button>
-                    </a>
-                </div>
-            </div>
-            <?php } ?>
-        </div>
-    </section>
-        </div>
-        </div>
+
+    <script>
+
+    </script>
+      
+
       <!-- this is the footer  -->
      
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <?php
       include '../Includes/Footer.php';
     ?>

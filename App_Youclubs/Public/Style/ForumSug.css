@@ -1,0 +1,206 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body header nav {
+  background-color: black;
+  font-family: "Montserrat";
+}
+
+body header nav .navbar-toggler {
+  color: white;
+  background-color: white;
+}
+
+body header nav .btnConnexion {
+  margin-top: -130px;
+  width: 200px;
+  height: 50px;
+  background-color: #038DFE;
+  color: white;
+  border-radius: 40px;
+  border-style: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+body header nav .btnConnexion:hover {
+  cursor: pointer;
+  background-color: #bdbdbd;
+  color: #038DFE;
+}
+
+body header nav ul li a {
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+body header nav ul li a:hover {
+  background-color: #2c2c2c;
+}
+
+@media only screen and (max-width: 1300px) {
+  header nav .nav-link {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  header nav li a {
+    text-align: center;
+  }
+}
+
+.footer1 {
+  padding: 6px;
+  text-align: center;
+  background: black;
+  line-height: 25px;
+  color: #fff;
+  font-family: 'Gilroy';
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 0px;
+}
+
+.footer1 span {
+  background-image: url("../Images/bluePic.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: fire 2s linear infinite;
+  animation: fire 2s linear infinite;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@-webkit-keyframes fire {
+  0% {
+    background-position: 0% -50%;
+  }
+  0% {
+    background-position: 100% -50%;
+  }
+}
+
+@keyframes fire {
+  0% {
+    background-position: 0% -50%;
+  }
+  0% {
+    background-position: 100% -50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+body h2 {
+  text-align: center;
+}
+
+body .Image1 {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+body .table {
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+body .table td {
+  text-align: center;
+}
+
+body .table div {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .table button {
+  border-style: none;
+}
+
+body .space {
+  height: 80px;
+}
+
+body .h {
+  text-align: center;
+  padding: 1em;
+  font-weight: 3em;
+}
+
+body p {
+  font-size: 20px;
+  text-align: center;
+}
+
+body .Part_event {
+  width: 100%;
+  padding: 5px;
+}
+
+body .Part_event h2 {
+  text-align: center;
+}
+
+body .Part_event .tri {
+  width: 86%;
+  margin: auto;
+}
+
+body .Part_event .tri .triAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 420px;
+  float: left;
+}
+
+body .Part_event .tri .triAll .btnSearch {
+  border-style: none;
+  background-color: white;
+}
+
+body .Part_event .tri .triAll select {
+  font-size: 18px;
+  width: 180px;
+  text-align: center;
+}
+
+body section .btnSuggestion {
+  height: 41px;
+  background-color: #038DFE;
+  color: white;
+  border-radius: 40px;
+  border-style: none;
+  font-size: 16px;
+  padding: 8px;
+  float: right;
+}
+
+body .row {
+  padding: 13px;
+}
+
+body .card {
+  width: 1097px;
+}
+/*# sourceMappingURL=ForumSug.css.map */

@@ -17,7 +17,8 @@
 </head>
 <body>
     <?php 
-        include '../Includes/HeaderClub.php';
+            include '../Includes/HeaderMembre.php';
+      
     ?>
     <hr>
     <section class="Description_page">
